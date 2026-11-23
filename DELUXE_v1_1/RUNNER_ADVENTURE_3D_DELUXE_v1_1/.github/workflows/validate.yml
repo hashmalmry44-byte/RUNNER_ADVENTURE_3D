@@ -1,0 +1,22 @@
+name: Validate Godot project
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Godot 4.4.1
+        run: |
+          wget -q https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip
+          unzip -q Godot_v4.4.1-stable_linux.x86_64.zip -d .godot-ci
+          chmod +x .godot-ci/Godot_v4.4.1-stable_linux.x86_64
+          mv .godot-ci/Godot_v4.4.1-stable_linux.x86_64 .godot-ci/godot
+      - name: Validate project and scripts
+        run: |
+          .godot-ci/godot --headless --path . --editor --quit
+          .godot-ci/godot --headless --path . --quit

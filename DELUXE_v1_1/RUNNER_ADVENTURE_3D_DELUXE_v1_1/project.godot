@@ -1,0 +1,48 @@
+; RUNNER ADVENTURE 3D — Godot 4.4.1
+; Arabic-first Android endless runner
+config_version=5
+
+[application]
+config/name="RUNNER ADVENTURE 3D"
+config/description="لعبة مغامرة وعدّاء ثلاثية الأبعاد"
+run/main_scene="res://scenes/main/main_menu.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://assets/icons/app_icon.svg"
+
+[autoload]
+GameState="*res://scripts/systems/game_state.gd"
+
+[display]
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=450
+window/size/window_height_override=800
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.11, 0.16, 0.22, 1)
+
+[physics]
+3d/default_gravity=24.0
+
+[input]
+move_left={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":65), Object(InputEventKey,"physical_keycode":4194311)]
+}
+move_right={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":68), Object(InputEventKey,"physical_keycode":4194313)]
+}
+jump={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":32), Object(InputEventKey,"physical_keycode":4194309)]
+}
+slide={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"physical_keycode":83), Object(InputEventKey,"physical_keycode":4194312)]
+}

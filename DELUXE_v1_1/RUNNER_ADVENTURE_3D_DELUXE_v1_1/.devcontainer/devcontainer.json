@@ -1,0 +1,11 @@
+{
+  "name": "RUNNER ADVENTURE 3D — Godot 4.4.1",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["geequlim.godot-tools"]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup-godot.sh",
+  "remoteUser": "vscode"
+}

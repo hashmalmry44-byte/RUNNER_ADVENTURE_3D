@@ -1,0 +1,17 @@
+# Godot generated files
+.godot/
+.import/
+.export/
+export.cfg
+*.translation
+# Build outputs
+build/
+dist/
+*.apk
+*.aab
+*.keystore
+*.jks
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/

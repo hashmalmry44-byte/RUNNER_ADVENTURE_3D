@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#18384d"/><stop offset="1" stop-color="#f2a84a"/></linearGradient>
+ <linearGradient id="sand" x2="0" y2="1"><stop stop-color="#f7d17c"/><stop offset="1" stop-color="#b9632f"/></linearGradient>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#sky)"/>
+<circle cx="390" cy="116" r="54" fill="#ffe5a1"/>
+<path d="M0 330 Q130 220 250 330 T512 300 V512 H0Z" fill="url(#sand)"/>
+<path d="M0 410 Q150 330 290 410 T512 390 V512 H0Z" fill="#d78a3d"/>
+<!-- Original stylized runner silhouette -->
+<ellipse cx="258" cy="420" rx="112" ry="22" fill="#6e3d2b" opacity=".35"/>
+<path d="M236 194 Q276 170 302 205 L286 282 L224 275Z" fill="#247c85"/>
+<circle cx="270" cy="157" r="43" fill="#9b5938"/>
+<path d="M228 145 Q238 93 293 112 Q315 122 310 154 Q278 130 228 145Z" fill="#3a2b27"/>
+<path d="M236 276 L204 352 L151 390 L174 412 L245 375 L279 304Z" fill="#243d54"/>
+<path d="M278 285 L326 340 L386 352 L378 380 L306 375 L254 328Z" fill="#243d54"/>
+<path d="M242 208 L180 248 L153 220 L137 235 L177 286 L257 253Z" fill="#9b5938"/>
+<path d="M291 210 L350 238 L379 211 L396 228 L359 276 L284 252Z" fill="#9b5938"/>
+<path d="M160 394 L120 421 L177 429 L203 408Z" fill="#f4e2bf"/>
+<path d="M375 365 L425 379 L390 405 L365 389Z" fill="#f4e2bf"/>
+<path d="M55 340 Q68 284 82 258 Q92 285 87 342Z" fill="#28644e"/>
+<path d="M80 285 Q38 274 28 245 Q63 245 80 285Z" fill="#347b56"/>
+<path d="M82 280 Q103 239 134 238 Q121 272 82 280Z" fill="#347b56"/>
+</svg>
